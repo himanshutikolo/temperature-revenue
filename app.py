@@ -18,10 +18,10 @@ def predict():
             print(res)
             return render_template('index.html',prediction_text_area=f"Total revenue is Rs. {res}/-")
         else:
-            return render_template('index.html',prediction_text_area="go fuck your gf ")
+            return render_template('index.html',prediction_text_area="Range not valid!")
     except:
         # avxhghsg
-        return render_template('index.html',prediction_text_area="go fuck your gf again")
+        return render_template('index.html',prediction_text_area="Enter float values.")
 
 
  
